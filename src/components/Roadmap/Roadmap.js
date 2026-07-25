@@ -96,15 +96,15 @@ function Roadmap() {
               {currentRelease?.date}
             </div>
             <div className="">
-              <a href={`https://github.com/horizontalsystems/unstoppable-wallet-ios/releases/tag/${current}`}
+              <a href={`https://github.com/quarkx/quarkx-wallet-ios/releases/tag/${current}`}
                  target="_blank"
                  rel="noopener noreferrer"
                  className="text-warning me-3">iOS</a>
-              <a href={`https://github.com/horizontalsystems/unstoppable-wallet-android/releases/tag/${current}.0`}
+              <a href={`https://github.com/quarkx/quarkx-wallet-android/releases/tag/${current}.0`}
                  target="_blank"
                  rel="noopener noreferrer"
                  className="text-warning me-3">Android</a>
-              <a href="https://f-droid.org/en/packages/io.horizontalsystems.bankwallet/"
+              <a href="https://f-droid.org/en/packages/com.quarkx.wallet/"
                  target="_blank"
                  rel="noopener noreferrer"
                  className="text-warning">F-Droid</a>
