@@ -1,0 +1,17 @@
+.card-bg-violet {
+  height: 100%;
+  background-image: url("/images/gradients/violet.svg");
+  background-position: 50% 0;
+}
+
+.card-bg-yellow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card-bg-grey {
+  height: 100%;
+  background-image: url("/images/gradients/grey.svg");
+  background-position: 50% 0;
+}

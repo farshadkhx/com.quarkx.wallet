@@ -1,0 +1,284 @@
+@import "normalize.css";
+@import 'bootstrap';
+
+// Background
+
+.bg-steel-10 {
+  background: $steel-10;
+}
+
+.bg-steel-20 {
+  background: $steel-20;
+}
+
+// Card
+
+.card-regular {
+  height: 100%;
+  max-height: 374px;
+  min-height: 300px;
+}
+
+.card-big {
+  height: 100%;
+  max-height: 500px;
+}
+
+// Images
+
+.Multiwallet-img {
+  width: 100px;
+
+  @include media-breakpoint-up(sm) {
+    width: 150px;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 206px;
+  }
+}
+
+.Multiwallet-img-bg {
+  width: 130px;
+
+  @include media-breakpoint-up(sm) {
+    width: 180px;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 246px;
+  }
+}
+
+.rounded-24 {
+  border-radius: 24px !important;
+}
+
+.rounded-32 {
+  border-radius: 32px !important;
+}
+
+// Hero
+
+.hero-image {
+  box-shadow: 5rem 8rem 3rem 1rem rgba(0, 0, 0, 0.25);
+  width: 180px;
+  object-fit: cover;
+
+  @include media-breakpoint-up(sm) {
+    width: 260px;
+  }
+}
+
+.btn-hero {
+  margin-top: 20px;
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 0;
+    width: auto;
+  }
+}
+
+.wallet-connect-svg {
+  @include media-breakpoint-up(sm) {
+  }
+}
+
+.multi-chain-svg {
+  @include media-breakpoint-down(md) {
+    width: 256px;
+    height: 253px;
+  }
+}
+
+.coin-analytics-img {
+  @include media-breakpoint-down(md) {
+    width: 176px;
+  }
+}
+
+// Videos
+.Videos-container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: 1fr;
+  }
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.Videos-content, .Videos-tabs {
+  background: $steel-20;
+  border-radius: 12px;
+
+  @include media-breakpoint-up(md) {
+    min-height: 330px;
+  }
+}
+
+.Videos-content {
+  height: 100%;
+  padding: 16px;
+}
+
+.Videos-tabs {
+  padding: 20px 32px;
+}
+
+.Videos-tabs .tablink {
+  display: block;
+  white-space: nowrap;
+  cursor: pointer;
+  color: $steel_light;
+  padding: 16px 0;
+  width: 100%;
+  border-top: 1px solid $steel_20;
+  transition: 0.3s;
+}
+
+.tablink-header {
+  padding: 4px 0 16px;
+  color: $grey;
+}
+
+.Videos-tabs .tablink:hover {
+  color: $yellow;
+}
+
+.Videos-tabs .tablink.active {
+  color: $yellow;
+}
+
+.tabcontent {
+  width: 100%;
+  display: block;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    height: 250px;
+  }
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+// Donate
+
+.Donate-cards {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.QrCodeTooltip {
+  z-index: 99;
+  opacity: 1 !important;
+}
+
+// Button
+
+.Button-steal20 {
+  background: #6e789933;
+  color: #fff;
+}
+
+.Button-steal20:hover {
+  background: #7D819F1B !important;
+}
+
+// FAQ
+
+.Faq-title {
+  padding-top: 40px;
+  padding-bottom: 36px;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 65px;
+  color: $steel-light;
+}
+
+.Faq-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Faq-item-title {
+  margin: 8px 0;
+  padding: 16px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: $steel-light;
+}
+
+.Faq-item {
+  position: relative;
+  border: 1px solid rgba(128, 128, 133, 0.5);
+  border-radius: 16px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.Faq-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px 24px 30px;
+
+  font-size: 18px;
+  line-height: 25px;
+  color: $steel-light;
+}
+
+.Faq-item-icon {
+  position: absolute;
+  right: 30px;
+
+  @include media-breakpoint-up(sm) {
+    right: 21px;
+  }
+}
+
+.Faq-content {
+  padding: 0 30px;
+
+  .divider {
+    height: .5px;
+    margin-bottom: 24px;
+    background: rgba(128, 128, 133, 0.5);
+  }
+
+  .Markdown {
+    h1:first-child {
+      display: none;
+    }
+  }
+}

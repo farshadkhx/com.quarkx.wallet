@@ -1,0 +1,48 @@
+import Modal from '@/components/Modal'
+import Image from 'next/image'
+
+function Download({ isOpen, onClose }) {
+  return (
+    <Modal isOpen={isOpen} onClose={onClose}>
+      <div className="position-relative text-center p-5">
+        <div className="position-absolute top-0 end-0 p-3" style={{ cursor: 'pointer' }} onClick={onClose}>
+          <Image src="/icons/close.svg" alt="" width="20" height="20" />
+        </div>
+        <Image className="d-block mx-auto mb-5" src="/images/qr.png" alt="" width="150" height="150" />
+        <div className="mx-auto">
+          <div className="d-grid gap-3 d-sm-flex justify-content-center">
+            <a href="https://play.google.com/store/apps/details?id=io.horizontalsystems.bankwallet" target="_blank" type="button"
+               className="btn btn-warning d-flex align-items-center rounded-5 px-5">
+              <Image src="/icons/google-play.png" alt="" width="16" height="16" />
+              <span className="ms-2">Google Play</span>
+            </a>
+            <a href="https://itunes.apple.com/app/bank-bitcoin-wallet/id1447619907?ls=1&mt=8" target="_blank" type="button"
+               className="btn btn-warning d-flex align-items-center rounded-5 px-5">
+              <Image src="/icons/app-store.png" alt="" width="16" height="16" />
+              <span className="ms-2">App Store</span>
+            </a>
+          </div>
+          <div className="d-grid gap-3 d-sm-flex justify-content-center my-4">
+            <a href="https://f-droid.org/en/packages/io.horizontalsystems.bankwallet/" target="_blank"
+               className="d-flex align-items-center px-4 text-decoration-none text-white">
+              <Image src="/icons/f-droid.png" alt="" width="16" height="16" />
+              <span className="ms-2">F-Droid</span>
+            </a>
+            <a href="https://github.com/horizontalsystems/quarkx-wallet-android/releases" target="_blank"
+               className="d-flex align-items-center px-4 text-decoration-none text-white">
+              <Image src="/icons/android.png" alt="" width="16" height="16" />
+              <span className="ms-2">APK file</span>
+            </a>
+            <a href="https://testflight.apple.com/join/JaKdKPY5" target="_blank"
+               className="d-flex align-items-center px-4 text-decoration-none text-white">
+              <Image src="/icons/testflight.png" alt="" width="16" height="16" />
+              <span className="ms-2">TestFlight</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </Modal>
+  )
+}
+
+export default Download

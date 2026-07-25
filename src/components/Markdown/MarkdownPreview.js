@@ -1,0 +1,33 @@
+import React from 'react'
+
+function MarkdownPreview({ className }) {
+  const body = (
+    <p className="card-text placeholder-glow">
+      <span className="placeholder col-7"></span>
+      <span className="placeholder col-4"></span>
+      <span className="placeholder col-4"></span>
+      <span className="placeholder col-6"></span>
+      <span className="placeholder col-8"></span>
+    </p>
+  )
+
+  return (
+    <div className={className}>
+      <div className="Markdown col-sm-12 col-md-9">
+        <div className="h1 placeholder-glow">
+          <span className="placeholder col-4"></span>
+        </div>
+        {body}
+        <div className="h2 placeholder-glow">
+          <span className="placeholder col-3" />
+        </div>
+        {body}
+        <div className="h2 placeholder-glow">
+          <span className="placeholder col-4" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default MarkdownPreview
