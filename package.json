@@ -1,0 +1,31 @@
+{
+  "name": "web-wallet.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start -p 3002",
+    "lint": "next lint",
+    "deploy": "scp -r ./.next/* deploy@websites:/home/deploy/unstoppable.next/.next"
+  },
+  "dependencies": {
+    "@react-spring/web": "^9.7.5",
+    "bootstrap": "^5.3.3",
+    "classnames": "^2.5.1",
+    "marked": "^15.0.4",
+    "next": "^15.5.18",
+    "normalize.css": "^8.0.1",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-fast-marquee": "^1.6.5",
+    "react-modal": "^3.16.3",
+    "react-tooltip": "^5.28.1",
+    "sass": "^1.83.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "^15.5.18"
+  }
+}
